@@ -1,0 +1,22 @@
+[package]
+name = "budget"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+
+[profile.release]
+strip = true
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[lints]
+unsafe_code = "forbid"
+
+[lints.clippy]
+enum_glob_use = "deny"
+pedantic = "deny"
+nursery = "deny"
