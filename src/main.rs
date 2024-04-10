@@ -37,7 +37,7 @@ async fn main() -> std::io::Result<()> {
             ColorChoice::Always,
         ),
         WriteLogger::new(
-            LevelFilter::Trace,
+            LevelFilter::Debug,
             Config::default(),
             File::create("budget_rs.log")?,
         ),
