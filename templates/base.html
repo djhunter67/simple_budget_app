@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %} {{ title }}-My Site{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="icon" href="/favicon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/index">
+    <script src="static/assets/htmx/htmx.min.js"></script>
+    {% block head %}
+    {% endblock head %}
+  </head>
+  <body>
+    <div id="main">
+      {% block content %}
+      
+      {% endblock %}      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block head %}{% endblock %}
+
+{% block content %}
+<div class="viewer">
+  <div class="viewer__header">
+    <section class="viewer__header__expenses">
+      <h2>Expenses</h2>
+      <p>{{ total_expenses }}</p>
+    </section>
+    <section class="viewer__header__income">
+      <h2>Income</h2>
+      <p>{{ total_income }}</p>
+    </section>
+  </div>
+</div>
+{% call super() %}
+{% endblock %}

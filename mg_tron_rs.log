@@ -1,0 +1,12 @@
+00:33:58 [DEBUG] (1) budget: Logger initialized.
+00:33:58 [INFO] starting 2 workers
+00:33:58 [INFO] Actix runtime found; starting in Actix runtime
+00:33:58 [TRACE] (1) actix_server::worker: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-server-2.3.0/src/worker.rs:287] starting server worker 0
+00:33:58 [TRACE] (2) mio::poll: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-0.8.11/src/poll.rs:551] registering event source with poller: token=Token(1), interests=READABLE
+00:33:58 [TRACE] (2) actix_web::middleware::logger: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-web-4.5.1/src/middleware/logger.rs:470] Access log format: %a "%r" %s %b "%{Referer}i" "%{User-Agent}i" %T
+00:33:58 [TRACE] (1) actix_server::worker: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-server-2.3.0/src/worker.rs:287] starting server worker 1
+00:33:58 [TRACE] (2) actix_server::worker: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-server-2.3.0/src/worker.rs:514] service "actix-web-service-0.0.0.0:8100" is available
+00:33:58 [TRACE] (3) mio::poll: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-0.8.11/src/poll.rs:551] registering event source with poller: token=Token(1), interests=READABLE
+00:33:58 [TRACE] (3) actix_web::middleware::logger: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-web-4.5.1/src/middleware/logger.rs:470] Access log format: %a "%r" %s %b "%{Referer}i" "%{User-Agent}i" %T
+00:33:58 [TRACE] (1) mio::poll: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-0.8.11/src/poll.rs:551] registering event source with poller: token=Token(0), interests=READABLE
+00:33:58 [TRACE] (3) actix_server::worker: [/home/djhunter67/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-server-2.3.0/src/worker.rs:514] service "actix-web-service-0.0.0.0:8100" is available
