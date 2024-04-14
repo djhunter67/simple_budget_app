@@ -26,6 +26,13 @@ body {
     display: table-cell;
     vertical-align: middle;
 
+    h2 {
+	margin-top: 0;
+	font-size: 5rem;
+	color: $primary;
+	// Bubble font
+	font-family: 'Bubblegum Sans', cursive;
+    }
 
     .viewer {
 	margin: auto;
@@ -37,8 +44,11 @@ body {
 	width: 1280px;
 	background-color: $dark-grey;
 	border-radius: $border-radius;
+	position: relative;
 
 	&__header {
+	    position: absolute;
+	    top: 0;
 	    display: flex;
 	    justify-content: space-between;
 	    align-items: center;
@@ -47,13 +57,74 @@ body {
 	    gap: 1rem;
 	    background-color: $dark-grey;
 	    color: $white;
-	    border-bottom: 1px solid $light-grey;
+	    height: 880px;
+	    width: 600px;
+	    overflow-y: scoll;
+	    
 
 	    &__expenses {
 
-		h2 {
-		    // margin: 0;
-		    font-size: $font-size;		
+		h3 {
+		    margin: 0;
+		}
+
+		&__container {
+
+		    &__home{
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			margin: 1rem;
+			padding: 1rem;
+			border-radius: $border-radius;
+			background-color: $primary;
+			color: $white;
+		    }
+
+		    &__food {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			margin: 1rem;
+			padding: 1rem;
+			border-radius: $border-radius;
+			background-color: $secondary;
+			color: $white;
+		    }
+
+		    &__childcare {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			margin: 1rem;
+			padding: 1rem;
+			border-radius: $border-radius;
+			background-color: $success;
+			color: $white;
+		    }
+
+		    &__transportation {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			margin: 1rem;
+			padding: 1rem;
+			border-radius: $border-radius;
+			background-color: $warning;
+			color: $white;
+		    }
+
+		    &__other {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			margin: 1rem;
+			padding: 1rem;
+			border-radius: $border-radius;
+			background-color: $error;
+			color: $white;
+		    }
+
 		}
 
 		p {
@@ -64,17 +135,49 @@ body {
 
 	    &__income {
 
-		h2 {
-		    // margin: 0;
-		    font-size: $font-size;		
+		h3 {
+		    margin: 0;
 		}
 
+		&__container {
+
+		    &__wages {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			margin: 1rem;
+			padding: 1rem;
+			border-radius: $border-radius;
+			background-color: $primary;
+			color: $white;
+		    }
+
+		    &__investments {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			margin: 1rem;
+			padding: 1rem;
+			border-radius: $border-radius;
+			background-color: $secondary;
+			color: $white;
+		    }
+
+		    &__other {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			margin: 1rem;
+			padding: 1rem;
+			border-radius: $border-radius;
+			background-color: $success;
+			color: $white;
+		    }
+		}
 		p {
 		    margin: 0;
 		    font-size: $font-size;
 		}
-
-
 	    }
 	}
     }

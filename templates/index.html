@@ -7,11 +7,73 @@
   <div class="viewer__header">
     <section class="viewer__header__expenses">
       <h2>Expenses</h2>
-      <p>{{ total_expenses }}</p>
+      <h3>{{ total_expenses }}</h3>      
+      <div class="viewer__header__expenses__container">
+	<label for="Home">Home</label>
+	<select name="Home" id="Home" class="viewer__header__expenses__container__home">
+	  <option value="Mortgage">Mortgage</option>
+	  <option value="Utilities">Utilities</option>
+	  <option value="Insurance">Insurance</option>
+	  <option value="Property Tax">Property Tax</option>
+	  <option value="Repairs">Maintenance</option>
+	  
+
+	  <label for="Food">Food</label>
+	  <select name="Food" id="Food" class="viewer__header__expenses__container__food">
+	    <option value="Groceries">Groceries</option>
+	    <option value="Dining Out">Dining Out</option>
+	  </select>
+
+	  <label for="Childcare">Childcare</label>
+	  <select name="Childcare" id="Childcare" class="viewer__header__expenses__container__childcare">
+	    <option value="Daycare">Daycare</option>
+	    <option value="School">School</option>
+	    <option value="Activities">Activities</option>
+	  </select>
+
+	  <label for="Transportation">Transportation</label>
+	  <select name="Transportation" id="Transportation" class="viewer__header__expenses__container__transportation">
+	    <option value="Car Payment">Car Payment</option>
+	    <option value="Gas">Gas</option>
+	    <option value="Insurance">Insurance</option>
+	    <option value="Repairs">Repairs</option>
+	  </select>
+
+	  <label for="Other">Other</label>
+	  <select name="Other" id="Other" class="viewer__header__expenses__container__other">
+	    <option value="Clothing">Clothing</option>
+	    <option value="Entertainment">Entertainment</option>
+	    <option value="Medical">Medical</option>
+	    <option value="Savings">Savings</option>
+	    <option value="Miscellaneous">Miscellaneous</option>
+	  </select>
+      </div>
     </section>
     <section class="viewer__header__income">
       <h2>Income</h2>
-      <p>{{ total_income }}</p>
+      <h3>{{ total_income }}</h3>
+      <div class="viewer__header__income__container">
+	<label for="Wages">Wages</label>
+	<select name="Wages" id="Wages" class="viewer__header__income__container__wages">
+	  <option value="Salary">Salary</option>
+	  <option value="Contract">Contract</option>
+	</select>
+
+	<label for="Investments">Investments</label>
+	<select name="Investments" id="Investments" class="viewer__header__income__container__investments">
+	  <option value="Stocks">Stocks</option>
+	  <option value="Bonds">Bonds</option>
+	  <option value="Mutual Funds">Mutual Funds</option>
+	</select>
+
+	<label for="Other">Other</label>
+	<select name="Other" id="Other" class="viewer__header__income__container__other">
+	  <option value="Gifts">Gifts</option>
+	  <option value="Inheritance">Inheritance</option>
+	  <option value="Lottery">Lottery</option>
+	  <option value="Disability">Disability</option>
+	</select>
+      </div>
     </section>
   </div>
 </div>

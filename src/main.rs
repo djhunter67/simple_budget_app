@@ -7,7 +7,7 @@ use actix_web::{
 use askama::Template;
 
 use log::{debug, error, info, warn};
-use redis::Client;
+use mongodb::Client;
 
 use simplelog::{
     ColorChoice, CombinedLogger, Config, LevelFilter, TermLogger, TerminalMode, WriteLogger,
@@ -23,8 +23,8 @@ mod template_variables;
 const HOST_IP: &str = "0.0.0.0"; // Local connection
 const PORT: u16 = 8100;
 
-// pub const REDIS_PATH: &str = "redis://10.20.30.5/"; // UNRAID connection
-pub const REDIS_PATH: &str = "redis://127.0.0.1/"; // Local connection
+// pub const MONGODB_PATH: &str = "mongodb://127.0.0.1/"; // Local connection
+pub const MONGODB_PATH: &str = "mongodb://10.20.30.20:27017/";
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
@@ -49,7 +49,7 @@ async fn main() -> std::io::Result<()> {
         }
     }
 
-    let client = Client::open(REDIS_PATH).unwrap();
+    let client = Client::with_uri_str(MONGODB_PATH).await;
 
     HttpServer::new(move || {
         App::new()
@@ -101,7 +101,7 @@ async fn main() -> std::io::Result<()> {
         warn!("Error binding to port {}.", PORT);
         std::process::exit(1); // This is expected behavior if the port is already in use
     })
-    .disable_signals() // Disable the signals to allow the OS to handle the signals
+    // .disable_signals() // Disable the signals to allow the OS to handle the signals
     .shutdown_timeout(3)
     .workers(2)
     .run()
