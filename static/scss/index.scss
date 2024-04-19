@@ -10,6 +10,8 @@ $warning: hsl(40, 100%, 50%);
 $error: hsl(0, 100%, 50%);
 $font-size: 1.25rem;
 $border-radius: 1.25rem;
+$main-width: 90dvw;
+$main-height: 80dvh;
 
 body {
     background-color: $light-grey;
@@ -26,13 +28,15 @@ body {
     display: table-cell;
     vertical-align: middle;
 
-    h2 {
+    h2, p, h3 {
 	margin-top: 0;
-	font-size: 5rem;
+	font-size: calc(50dvw / 10);
 	color: $primary;
 	// Bubble font
 	font-family: 'Bubblegum Sans', cursive;
     }
+
+    
 
     .viewer {
 	margin: auto;
@@ -40,8 +44,8 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;	
-	height: 800px;
-	width: 1280px;
+	height: calc($main-height / 1);
+	width: calc($main-width / 1);
 	background-color: $dark-grey;
 	border-radius: $border-radius;
 	position: relative;
@@ -50,16 +54,17 @@ body {
 	    position: absolute;
 	    top: 0;
 	    display: flex;
-	    justify-content: space-between;
-	    align-items: center;
-	    flex-wrap: wrap;
+	    justify-content: space-evenly;
+	    align-items: normal;
+	    flex-wrap: nowrap;
 	    flex-direction: row;
 	    gap: 1rem;
 	    background-color: $dark-grey;
 	    color: $white;
-	    height: 880px;
-	    width: 600px;
+	    height: fit-content;
+	    width: calc($main-width / 1);
 	    overflow-y: scoll;
+	    border-radius: $border-radius;
 	    
 
 	    &__expenses {
@@ -133,6 +138,11 @@ body {
 		}
 	    }
 
+	    &__monies {
+		font-size: calc(50dvw / 20);
+		margin: auto 0;
+	    }
+
 	    &__income {
 
 		h3 {
@@ -191,22 +201,22 @@ body {
 	    
 	    width: 100%;
 
-	    &__header {
-		flex-direction: column;
-		&__expenses {
+	    // &__header {
+	    // 	// flex-direction: column;
+	    // 	&__expenses {
 
-		    h2 {
-			// margin: 0;
-			font-size: $font-size;		
-		    }
+	    // 	    h2 {
+	    // 		// margin: 0;
+	    // 		font-size: $font-size;		
+	    // 	    }
 
-		    p {
-			margin: 0;
-			font-size: $font-size;
-		    }
-		}
+	    // 	    p {
+	    // 		margin: 0;
+	    // 		font-size: $font-size;
+	    // 	    }
+	    // 	}
 
-	    }
+	    // }
 	}
     }
 }

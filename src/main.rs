@@ -111,6 +111,7 @@ async fn main() -> std::io::Result<()> {
 pub async fn index() -> HttpResponse {
     let index_template = IndexTemplate {
         title: "Index",
+        current_amount: 1512.48,
         total_expenses: 5836.28,
         total_income: 7348.76,
     };

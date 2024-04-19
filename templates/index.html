@@ -4,7 +4,8 @@
 
 {% block content %}
 <div class="viewer">
-  <div class="viewer__header">
+  
+  <div class="viewer__header">    
     <section class="viewer__header__expenses">
       <h2>Expenses</h2>
       <h3>{{ total_expenses }}</h3>      
@@ -16,7 +17,6 @@
 	  <option value="Insurance">Insurance</option>
 	  <option value="Property Tax">Property Tax</option>
 	  <option value="Repairs">Maintenance</option>
-	  
 
 	  <label for="Food">Food</label>
 	  <select name="Food" id="Food" class="viewer__header__expenses__container__food">
@@ -49,6 +49,7 @@
 	  </select>
       </div>
     </section>
+    <h1 class="viewer__header__monies">{{ current_amount }}</h1>
     <section class="viewer__header__income">
       <h2>Income</h2>
       <h3>{{ total_income }}</h3>

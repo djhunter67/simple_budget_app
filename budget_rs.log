@@ -1,15 +1,11 @@
-13:13:45 [DEBUG] (1) budget: Logger initialized.
-13:13:45 [INFO] starting 2 workers
-13:13:45 [INFO] Actix runtime found; starting in Actix runtime
-13:13:45 [INFO] 127.0.0.1 "GET / HTTP/1.1" 200 3485 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0" 0.000385
-13:13:45 [INFO] 127.0.0.1 "GET /index HTTP/1.1" 200 2545 "http://localhost:8100/" "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0" 0.000317
-13:13:45 [DEBUG] (3) actix_files::service: error handling /static/assets/htmx/htmx.min.js: No such file or directory (os error 2)
-13:13:45 [WARN] 404 Not Found
-13:13:45 [INFO] 404 Not Found template rendered
-13:13:45 [INFO] 127.0.0.1 "GET /static/assets/htmx/htmx.min.js HTTP/1.1" 404 418 "http://localhost:8100/" "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0" 0.000346
-13:13:46 [INFO] 127.0.0.1 "GET /index.css.map HTTP/1.1" 200 1060 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0" 0.000253
-13:13:50 [INFO] SIGINT received; starting forced shutdown
-13:13:50 [INFO] force shutdown worker, closing 1 connections
-13:13:50 [INFO] force shutdown worker, closing 2 connections
-13:13:50 [DEBUG] (4) actix_server::accept: paused accepting connections on 0.0.0.0:8100
-13:13:50 [INFO] accept thread stopped
+00:55:11 [DEBUG] (1) budget: Logger initialized.
+00:55:11 [INFO] starting 2 workers
+00:55:11 [INFO] Actix runtime found; starting in Actix runtime
+00:55:12 [INFO] 127.0.0.1 "GET / HTTP/1.1" 200 3535 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0" 0.000360
+00:55:12 [INFO] 127.0.0.1 "GET /index HTTP/1.1" 200 2493 "http://localhost:8100/" "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0" 0.000313
+00:55:12 [INFO] 127.0.0.1 "GET /index.css.map HTTP/1.1" 200 1040 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0" 0.000266
+00:55:44 [INFO] SIGINT received; starting forced shutdown
+00:55:44 [DEBUG] (4) actix_server::accept: paused accepting connections on 0.0.0.0:8100
+00:55:44 [INFO] force shutdown worker, closing 2 connections
+00:55:44 [INFO] shutting down idle worker
+00:55:44 [INFO] accept thread stopped

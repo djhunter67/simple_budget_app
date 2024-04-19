@@ -14,6 +14,7 @@ pub struct NotFoundTemplate<'a> {
 pub struct IndexTemplate<'a> {
     /// The title of the page.
     pub title: &'a str,
+    pub current_amount: f32,
     pub total_expenses: f32,
     pub total_income: f32,
 }
